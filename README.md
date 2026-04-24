@@ -65,4 +65,4 @@ See `docs/ART_INVENTORY.md` for texture provenance.
 
 ## License
 
-See `LICENSE` (template default **CC0-1.0**; change before publishing if you prefer another license).
+Licensed under **CC0-1.0**; see [`LICENSE`](LICENSE).
