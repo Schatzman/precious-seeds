@@ -4,12 +4,19 @@
 	"version": "${version}",
 	"name": "Precious Seeds",
 	"description": "Farm diamonds, emeralds, and dirt from wheat-style crops; bonus seed drops from ores and dirt.",
-	"authors": ["Governance Nexus implementer"],
+	"authors": [
+		"Governance Nexus implementer"
+	],
 	"license": "CC0-1.0",
 	"icon": "assets/precious_seeds/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": ["preciousseeds.PreciousSeedsMod"]
+		"main": [
+			"preciousseeds.PreciousSeedsMod"
+		],
+		"client": [
+			"preciousseeds.PreciousSeedsClient"
+		]
 	},
 	"depends": {
 		"fabricloader": ">=0.18.4",
