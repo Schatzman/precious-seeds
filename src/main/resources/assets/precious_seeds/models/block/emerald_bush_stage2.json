@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "precious_seeds:block/emerald_bush_stage2"
+  }
+}
