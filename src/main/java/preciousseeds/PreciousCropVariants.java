@@ -5,7 +5,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -67,7 +66,7 @@ public enum PreciousCropVariants {
 			BlockBehaviour.Properties props = BlockBehaviour.Properties.copy(Blocks.WHEAT).mapColor(variant.mapColor);
 			Block bush = new PreciousCropBlock(props, seedRef::get);
 			Registry.register(BuiltInRegistries.BLOCK, variant.bushId(), bush);
-			Item seeds = new ItemNameBlockItem(bush, new Item.Properties());
+			Item seeds = new PreciousSeedsItem(bush, new Item.Properties());
 			Registry.register(BuiltInRegistries.ITEM, variant.seedsId(), seeds);
 			seedRef.value = seeds;
 			variant.bushBlock = bush;
